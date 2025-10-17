@@ -14,6 +14,7 @@ import gallery_7 from './../../public/gallery_7.webp';
 import gallery_11 from './../../public/gallery_11.jpg';
 import gallery_12 from './../../public/gallery_12.jpg';
 import DeliveryPlatforms from '../components/DeliveryPlatforms';
+import home from './../../public/home.jpeg';
 
 const Home = () => {
   const galleryImages = [
@@ -29,7 +30,7 @@ const Home = () => {
   ];
 
   const testimonials = [
-    
+
     {
       name: "Fathima Ismail",
       text: "Overall a 5 Star experience The food - it was a tasty food, with an authentic touch. Portion sizes were good Service - great service however we had to wait very long for the food to arrive but they were extremely apologetic about it The atmosphere was nice small Resturnat but clean Toilet was clean also Drinks were good maybe they could do some traditional cold drinks in summer Good price - reasonable We had the thali, dosa, lamb curry, Homaby chai It was really a good experince and would recommend Meal type Dinner Price per person £40–50 Food: 4 Service: 5 Atmosphere: 5 Noise level Quiet, easy to talk Wait time No wait Recommendation for vegetarians Highly recommend Vegetarian offerings Clearly labeled vegetarian dishes Dietary restrictions Halal option is available but not stated on the website (check with staff and on the door) Parking space Plenty of parking Parking options Free street parking",
@@ -66,8 +67,9 @@ const Home = () => {
           <div
             className="absolute inset-0 w-full h-full bg-cover bg-center bg-fixed"
             style={{
-              backgroundImage: 'url(https://images.pexels.com/photos/2474661/pexels-photo-2474661.jpeg?auto=compress&cs=tinysrgb&w=1600)',
+              backgroundImage: `url(${home})`,
             }}
+
           >
             <div className="absolute inset-0 w-full h-full bg-black bg-opacity-50"></div>
           </div>
@@ -78,7 +80,7 @@ const Home = () => {
             <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto animate-slide-in-right">
               Experience the authentic flavors of India in the heart of London
             </p>
-            <div className="space-x-4 animate-slide-in-up">
+            <div className="flex flex-col md:flex-row items-center justify-center gap-4 animate-slide-in-up">
               <Link
                 to="/menu"
                 className="inline-block bg-green-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors transform hover:scale-105"
@@ -91,7 +93,16 @@ const Home = () => {
               >
                 Book Table
               </Link>
+              <button
+                onClick={() => {
+                  document.getElementById('order-online')?.scrollIntoView({ behavior: 'smooth' });
+                }}
+                className="inline-block bg-yellow-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-yellow-700 transition-colors transform hover:scale-105"
+              >
+                Order Now
+              </button>
             </div>
+
           </div>
         </section>
 
@@ -219,7 +230,10 @@ const Home = () => {
           </div>
         </section>
 
-        <DeliveryPlatforms />
+        <div id="order-online">
+          <DeliveryPlatforms />
+        </div>
+
       </div>
     </div>
   );
