@@ -44,7 +44,7 @@ const Contact = () => {
                     <p className="text-gray-600">
                       62 Brudenell Rd, Leeds LS6 1EG,
                       <br />
-                       United Kingdom
+                      United Kingdom
                     </p>
                   </div>
                 </div>
@@ -76,9 +76,12 @@ const Contact = () => {
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-1">Opening Hours</h3>
                     <div className="text-gray-600">
-                      <p>Mon - Sun: 11:00 AM - 11:00 PM</p>
+                      <p>Mon – Tue: 11:00 AM – 11:00 PM</p>
+                      <p>Wed: Closed</p>
+                      <p>Thu – Sun: 11:00 AM – 11:00 PM</p>
                       <p>Kitchen closes at 10:30 PM</p>
                     </div>
+
                   </div>
                 </div>
               </div>
