@@ -49,7 +49,7 @@ const BookTable = () => {
           <CheckCircle className="h-16 w-16 text-green-600 mx-auto mb-4" />
           <h2 className="text-3xl font-bold text-gray-900 mb-4">Reservation Confirmed!</h2>
           <p className="text-lg text-gray-600 mb-6">
-            Thank you for your reservation. We'll confirm your table within 2 hours. 
+            Thank you for your reservation. We'll confirm your table within 2 hours.
             A confirmation email has been sent to your address.
           </p>
           <p className="text-md text-gray-500 mb-8">
@@ -96,7 +96,13 @@ const BookTable = () => {
                 <Calendar className="h-8 w-8 text-green-600" />
               </div>
               <h3 className="text-xl font-semibold mb-2">Open Daily</h3>
-              <p className="text-gray-600">Monday to Sunday, lunch and dinner</p>
+
+              <p>Mon – Tue: 11:00 AM – 11:00 PM</p>
+              <p>Wed: Closed</p>
+              <p>Thu – Sun: 11:00 AM – 11:00 PM</p>
+              
+
+
             </div>
             <div className="text-center">
               <div className="bg-yellow-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
