@@ -8,13 +8,13 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {/* Grid layout */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          
+
           {/* Brand / About */}
           <div>
             <div className="flex items-center">
-              <img 
-                src={logo} 
-                alt="The Indian Feast" 
+              <img
+                src={logo}
+                alt="The Indian Feast"
                 className="h-10 w-auto pb-2"
               />
             </div>
@@ -26,18 +26,18 @@ const Footer = () => {
 
             {/* Social Media Links */}
             <div className="flex space-x-4">
-              <a 
-                href="https://www.facebook.com/profile.php?id=61574581703335&sk=about" 
-                target="_blank" 
+              <a
+                href="https://www.facebook.com/profile.php?id=61574581703335&sk=about"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="text-yellow-400 hover:text-yellow-300 transition-colors"
               >
                 <Facebook className="h-5 w-5" />
               </a>
 
-              <a 
-                href="https://www.instagram.com/theindianfeast_03/" 
-                target="_blank" 
+              <a
+                href="https://www.instagram.com/the_indian_feast_leeds?igsh=MTQ2NTJlNjc4Zmh1OA%3D%3D&utm_source=qr"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="text-yellow-400 hover:text-yellow-300 transition-colors"
               >
@@ -45,9 +45,9 @@ const Footer = () => {
               </a>
 
               {/* TikTok Icon (custom SVG) */}
-              <a 
-                href="https://www.tiktok.com/@theindianfeast?_t=ZN-90JuKrONiY2&_r=1" 
-                target="_blank" 
+              <a
+                href="https://www.tiktok.com/@theindianfeast?_t=ZN-90JuKrONiY2&_r=1"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="text-yellow-400 hover:text-yellow-300 transition-colors"
               >
@@ -103,8 +103,13 @@ const Footer = () => {
               <div className="flex items-start">
                 <Clock className="h-4 w-4 text-yellow-400 mr-2 mt-1" />
                 <div className="text-gray-300 text-sm">
-                  <div>Mon - Sun: 11:00 AM - 11:00 PM</div>
-                  <div>Kitchen closes at 10:30 PM</div>
+                
+                    <p>Mon – Tue: 11:00 AM – 11:00 PM</p>
+                    <p>Wed: Closed</p>
+                    <p>Thu – Sun: 11:00 AM – 11:00 PM</p>
+                    <p>Kitchen closes at 10:30 PM</p>
+               
+
                 </div>
               </div>
             </div>
