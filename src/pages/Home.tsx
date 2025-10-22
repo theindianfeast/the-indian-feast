@@ -64,13 +64,15 @@ const Home = () => {
       <div>
         {/* Hero Section */}
         <section className="relative h-screen flex items-center justify-center overflow-hidden">
-          <div
-            className="absolute inset-0 w-full h-full bg-cover bg-center bg-fixed"
-            style={{
-              backgroundImage: `url(${home})`,
-            }}
-
-          >
+          <div className="absolute inset-0 w-full h-full">
+            <img
+              src={home}
+              alt="The Indian Feast"
+              className="w-full h-full object-cover"
+              style={{
+                objectPosition: 'center center'
+              }}
+            />
             <div className="absolute inset-0 w-full h-full bg-black bg-opacity-50"></div>
           </div>
           <div className="relative z-10 text-center text-white px-4 w-full">
