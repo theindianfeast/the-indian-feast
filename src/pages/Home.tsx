@@ -65,17 +65,14 @@ const Home = () => {
         {/* Hero Section */}
         <section className="relative h-screen flex items-center justify-center overflow-hidden">
           <div
-            className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat md:bg-fixed hero-bg"
+            className="absolute inset-0 w-full h-full bg-cover bg-center bg-fixed"
             style={{
               backgroundImage: `url(${home})`,
-              backgroundPosition: 'center center',
-              backgroundSize: 'cover',
-              backgroundRepeat: 'no-repeat'
             }}
+
           >
             <div className="absolute inset-0 w-full h-full bg-black bg-opacity-50"></div>
           </div>
-
           <div className="relative z-10 text-center text-white px-4 w-full">
             <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-slide-in-left">
               The Indian Feast
