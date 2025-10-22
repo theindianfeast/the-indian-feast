@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@media (max-width: 768px) {
+  .hero-bg {
+    background-size: contain !important;
+    background-position: center top !important;
+    background-attachment: scroll !important; 
+  }
+}
+
+
 @keyframes slideInLeft {
   from {
     opacity: 0;
