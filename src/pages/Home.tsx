@@ -65,13 +65,15 @@ const Home = () => {
         {/* Hero Section */}
         <section className="relative h-screen flex items-center justify-center overflow-hidden">
           <div
-  className="absolute inset-0 w-full h-full bg-cover bg-center bg-fixed hero-bg"
-  style={{
-    backgroundImage: `url(${home})`,
-  }}
->
-  <div className="absolute inset-0 w-full h-full bg-black bg-opacity-50"></div>
-</div>
+            className="absolute inset-0 w-full h-full bg-cover bg-center md:bg-fixed hero-bg"
+            style={{
+              backgroundImage: `url(${home})`,
+              backgroundPosition: 'center center',
+              backgroundSize: 'cover'
+            }}
+          >
+            <div className="absolute inset-0 w-full h-full bg-black bg-opacity-50"></div>
+          </div>
 
           <div className="relative z-10 text-center text-white px-4 w-full">
             <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-slide-in-left">
