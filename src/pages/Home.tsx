@@ -80,7 +80,7 @@ const Home = () => {
               The Indian Feast
             </h1>
             <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto animate-slide-in-right">
-              Experience the authentic flavors of India in the heart of London
+              Experience the authentic flavors of India in the heart of Leeds
             </p>
             <div className="flex flex-col md:flex-row items-center justify-center gap-4 animate-slide-in-up">
               <Link
