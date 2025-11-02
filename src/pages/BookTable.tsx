@@ -49,11 +49,10 @@ const BookTable = () => {
           <CheckCircle className="h-16 w-16 text-green-600 mx-auto mb-4" />
           <h2 className="text-3xl font-bold text-gray-900 mb-4">Reservation Confirmed!</h2>
           <p className="text-lg text-gray-600 mb-6">
-            Thank you for your reservation. We'll confirm your table within 2 hours.
-            A confirmation email has been sent to your address.
+            Thank you for your reservation. We’ll reach out to you if we need any further information
           </p>
           <p className="text-md text-gray-500 mb-8">
-            If you need changes, please call us at +44 20 1234 5678
+            If you need changes, please call us at +44 7775 604501
           </p>
           <button
             onClick={() => setIsSubmitted(false)}
@@ -100,7 +99,7 @@ const BookTable = () => {
               <p>Mon – Tue: 11:00 AM – 11:00 PM</p>
               <p>Wed: Closed</p>
               <p>Thu – Sun: 11:00 AM – 11:00 PM</p>
-              
+
 
 
             </div>
@@ -254,7 +253,6 @@ const BookTable = () => {
                 <ul className="text-sm text-gray-600 space-y-1">
                   <li>• Reservations are held for 15 minutes past booking</li>
                   <li>• Large parties (8+ guests) may require a deposit</li>
-                  <li>• Confirmation email within 2 hours</li>
                   <li>• For same-day reservations, please call us directly</li>
                 </ul>
               </div>
@@ -281,7 +279,7 @@ const BookTable = () => {
               <input
                 type="hidden"
                 name="_autoresponse"
-                value="Thank you for your table reservation! We have received your booking request and will confirm your table within 2 hours. A confirmation will be sent to this email address."
+                value="Hello, thank you for booking a table with us. Your reservation has been confirmed. If any additional information is required, we will reach out to you using the contact details provided. We look forward to serving you. <br><br>Thank you,<br>The Indian Feast"
               />
               <input type="hidden" name="_template" value="table" />
             </form>
