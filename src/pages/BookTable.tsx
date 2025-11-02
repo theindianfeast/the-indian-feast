@@ -252,7 +252,6 @@ const BookTable = () => {
                 <h4 className="font-semibold text-gray-900 mb-2">Please Note:</h4>
                 <ul className="text-sm text-gray-600 space-y-1">
                   <li>• Reservations are held for 15 minutes past booking</li>
-                  <li>• Large parties (8+ guests) may require a deposit</li>
                   <li>• For same-day reservations, please call us directly</li>
                 </ul>
               </div>
